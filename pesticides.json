@@ -1,28 +1,28 @@
 {
-    "pest": [
+    "main": [
       {
-        "pest_name": "Termite",
+        "pest": "Termite",
         "pesticide": "Chlorpyrifos",
-        "plant_name": "Cotton",
-        "state_name": ["Gujarat", "Maharashtra", "Punjab", "Kerala"]
+        "plant": "Cotton",
+        "states": ["Gujarat", "Maharashtra", "Punjab", "Kerala"]
       },
       {
-        "pest_name": "Aphids",
+        "pest": "Aphids",
         "pesticide": "Imidacloprid",
-        "plant_name": "Potatoes",
-        "state_name": ["Gujarat", "Maharashtra", "Punjab", "Karnataka"]
+        "plant": "Potatoes",
+        "states": ["Gujarat", "Maharashtra", "Punjab", "Karnataka"]
       },
       {
-        "pest_name": "white flies",
+        "pest": "white flies",
         "pesticide": "Glyphosate",
-        "plant_name": "Tomato Crops",
-        "state_name": ["Karnataka, Kerala, Tamil Nadu"]
+        "plant": "Tomato Crops",
+        "states": ["Karnataka, Kerala, Tamil Nadu"]
       },
       {
         "pest_name": "Bollworm",
         "pesticide": "Cypermethrin",
-        "plant_name": "Beans",
-        "state_name": ["Punjab, Haryana, West Bengal, Karnataka"]
+        "plant": "Beans",
+        "states": ["Punjab, Haryana, West Bengal, Karnataka"]
       }
     ]
   }

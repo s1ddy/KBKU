@@ -6,6 +6,12 @@ import { Dropdown } from 'react-native-element-dropdown';
 const data = [
   { label: 'Karnataka', value: 'Karnataka' },
   { label: 'Kerala', value: 'Kerala' },
+  { label: 'Punjab', value: 'Punjab' },
+  { label: 'Maharashtra', value: 'Maharashtra' },
+  { label: 'Gujarat', value: 'Gujarat' },
+  { label: 'Tamil Nadu', value: 'Tamil Nadu' },
+  { label: 'West Bengal', value: 'West Bengal' },
+  { label: 'Haryana', value: 'Haryana' },
 ];
 
 
@@ -17,7 +23,7 @@ const PesticideApp = () => {
 
   const searchPesticide = () => {
     let foundPesticide = '';
-    pesticidesData.pesticides.forEach((data) => {
+    pesticidesData.main.forEach((data) => {
       if (data.plant.toLowerCase() === plant.toLowerCase() && data.states.includes(state)) {
         foundPesticide = data.pesticide;
       }
