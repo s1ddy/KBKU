@@ -16,13 +16,13 @@
         "pest": "white flies",
         "pesticide": "Glyphosate",
         "plant": "Tomato Crops",
-        "states": ["Karnataka, Kerala, Tamil Nadu"]
+        "states": ["Karnataka", "Kerala", "Tamil Nadu"]
       },
       {
         "pest": "Bollworm",
         "pesticide": "Cypermethrin",
         "plant": "Beans",
-        "states": ["Punjab, Haryana, West Bengal, Karnataka"]
+        "states": ["Punjab", "Haryana", "West Bengal", "Karnataka"]
       }
     ]
   }

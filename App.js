@@ -24,6 +24,7 @@ const PesticideApp = () => {
 
   const searchPesticide = () => {
     let foundPesticide = '';
+    let foundPest = '';
     pesticidesData.main.forEach((data) => {
       if (data.plant.toLowerCase() === plant.toLowerCase() && data.states.includes(state)) {
         foundPesticide = data.pesticide;
@@ -68,13 +69,11 @@ const PesticideApp = () => {
         <View style={styles.result}>
           <Text style={styles.resultText}>
             Pest for {plant} in {state}: {pest}.
+
             Pesticide for {plant} in {state}: {pesticide}.
           </Text>
-
-          <TouchableOpacity style={styles.button} onPress={searchPesticide}>
-            <Text style={styles.buttonText}>More details</Text>
-          </TouchableOpacity>
         </View>
+        
       )}
     </View>
   );
