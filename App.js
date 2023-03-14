@@ -69,11 +69,10 @@ const PesticideApp = () => {
         <View style={styles.result}>
           <Text style={styles.resultText}>
             Pest for {plant} in {state}: {pest}.
-          </Text>
-          <Text style = {styles.resultText}>
+            {'\n'}
             Pesticide for {plant} in {state}: {pesticide}.
           </Text>
-          <TouchableOpacity style={styles.resultButton}>
+          <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText}>Learn More</Text>
           </TouchableOpacity>
         </View>
@@ -124,13 +123,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
-  },
-  resultButton: {
-    width: '35%',
-    height: 40,
-    backgroundColor: '#2196F3',
-    padding: 10,
-    borderRadius: 5,
   },
   dropdown: {
     width: '80%',
