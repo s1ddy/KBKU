@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 import pesticidesData from './pesticides.json';
+import { Dropdown } from 'react-native-element-dropdown';
+
+const data = [
+  { label: 'Karnataka', value: 'Karnataka' },
+  { label: 'Kerala', value: 'Kerala' },
+];
+
 
 const PesticideApp = () => {
   const [plant, setPlant] = useState('');
   const [state, setState] = useState('');
   const [pesticide, setPesticide] = useState('');
+
 
   const searchPesticide = () => {
     let foundPesticide = '';
@@ -26,11 +34,23 @@ const PesticideApp = () => {
         value={plant}
         onChangeText={text => setPlant(text)}
       />
-      <TextInput
-        style={styles.input}
-        placeholder="Enter state name"
+      <Dropdown
+        style={styles.dropdown}
+        placeholderStyle={styles.placeholderStyle}
+        selectedTextStyle={styles.selectedTextStyle}
+        inputSearchStyle={styles.inputSearchStyle}
+        iconStyle={styles.iconStyle}
+        data={data}
+        search
+        maxHeight={300}
+        labelField="label"
+        valueField="value"
+        placeholder="Select state"
+        searchPlaceholder="Search..."
         value={state}
-        onChangeText={text => setState(text)}
+        onChange={item => {
+          setState(item.value);
+        }}
       />
       <TouchableOpacity style={styles.button} onPress={searchPesticide}>
         <Text style={styles.buttonText}>Search</Text>
@@ -87,6 +107,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
+  },
+  dropdown: {
+    width: '80%',
+    height: 40,
+    margin: 10,
+    padding: 10,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 5,
+  },
+  icon: {
+    marginRight: 5,
+  },
+  placeholderStyle: {
+    fontSize: 16,
+  },
+  selectedTextStyle: {
+    fontSize: 16,
+  },
+  iconStyle: {
+    width: 20,
+    height: 20,
+  },
+  inputSearchStyle: {
+    height: 40,
+    fontSize: 16,
   },
 });
 
