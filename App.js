@@ -19,6 +19,7 @@ const PesticideApp = () => {
   const [plant, setPlant] = useState('');
   const [state, setState] = useState('');
   const [pesticide, setPesticide] = useState('');
+  const [pest, setPest] = useState('');
 
 
   const searchPesticide = () => {
@@ -26,9 +27,11 @@ const PesticideApp = () => {
     pesticidesData.main.forEach((data) => {
       if (data.plant.toLowerCase() === plant.toLowerCase() && data.states.includes(state)) {
         foundPesticide = data.pesticide;
+        foundPest = data.pest;
       }
     });
     setPesticide(foundPesticide);
+    setPest(foundPest);
   }
 
   return (
@@ -64,8 +67,13 @@ const PesticideApp = () => {
       {pesticide !== '' && (
         <View style={styles.result}>
           <Text style={styles.resultText}>
-            Pesticide for {plant} in {state}: {pesticide}
+            Pest for {plant} in {state}: {pest}.
+            Pesticide for {plant} in {state}: {pesticide}.
           </Text>
+
+          <TouchableOpacity style={styles.button} onPress={searchPesticide}>
+            <Text style={styles.buttonText}>More details</Text>
+          </TouchableOpacity>
         </View>
       )}
     </View>

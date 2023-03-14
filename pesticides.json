@@ -19,7 +19,7 @@
         "states": ["Karnataka, Kerala, Tamil Nadu"]
       },
       {
-        "pest_name": "Bollworm",
+        "pest": "Bollworm",
         "pesticide": "Cypermethrin",
         "plant": "Beans",
         "states": ["Punjab, Haryana, West Bengal, Karnataka"]
