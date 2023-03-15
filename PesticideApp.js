@@ -14,8 +14,6 @@ const data = [
   { label: 'Haryana', value: 'Haryana' },
 ];
 
-export const [pestO, setPestO] = useState('');
-
 
 const PesticideApp = ({navigation}) => {
   const [plant, setPlant] = useState('');
@@ -35,7 +33,6 @@ const PesticideApp = ({navigation}) => {
     });
     setPesticide(foundPesticide);
     setPest(foundPest);
-    setPestO(foundPest)
   }
 
   return (
@@ -76,83 +73,83 @@ const PesticideApp = ({navigation}) => {
             Pesticide for {plant} in {state}: {pesticide}.
           </Text>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText} onPress = {() => navigation.navigate('Pest')}>Learn More</Text>
+            <Text style={styles.buttonText} onPress = {() => navigation.navigate(pest)}>Learn More</Text>
           </TouchableOpacity>
         </View>
       )}
     </View>
   );
-}
+  }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5fcff',
-  },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  input: {
-    width: '80%',
-    height: 40,
-    margin: 10,
-    padding: 10,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  button: {
-    backgroundColor: '#2196F3',
-    padding: 10,
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  result: {
-    margin: 20,
-    padding: 10,
-    backgroundColor: '#eaeaea',
-    borderRadius: 5,
-  },
-  resultText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  dropdown: {
-    width: '80%',
-    height: 40,
-    margin: 10,
-    padding: 10,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-  },
-  icon: {
-    marginRight: 5,
-  },
-  placeholderStyle: {
-    fontSize: 16,
-  },
-  selectedTextStyle: {
-    fontSize: 16,
-  },
-  iconStyle: {
-    width: 20,
-    height: 20,
-  },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 16,
-  },
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#f5fcff',
+    },
+    title: {
+      fontSize: 20,
+      textAlign: 'center',
+      margin: 10,
+    },
+    input: {
+      width: '80%',
+      height: 40,
+      margin: 10,
+      padding: 10,
+      borderColor: '#ccc',
+      borderWidth: 1,
+      borderRadius: 5,
+    },
+    button: {
+      backgroundColor: '#2196F3',
+      padding: 10,
+      borderRadius: 5,
+    },
+    buttonText: {
+      color: '#fff',
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    result: {
+      margin: 20,
+      padding: 10,
+      backgroundColor: '#eaeaea',
+      borderRadius: 5,
+    },
+    resultText: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    dropdown: {
+      width: '80%',
+      height: 40,
+      margin: 10,
+      padding: 10,
+      borderColor: '#ccc',
+      borderWidth: 1,
+      borderRadius: 5,
+    },
+    icon: {
+      marginRight: 5,
+    },
+    placeholderStyle: {
+      fontSize: 16,
+    },
+    selectedTextStyle: {
+      fontSize: 16,
+    },
+    iconStyle: {
+      width: 20,
+      height: 20,
+    },
+    inputSearchStyle: {
+      height: 40,
+      fontSize: 16,
+    },
 });
 
 export default PesticideApp;

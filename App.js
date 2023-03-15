@@ -5,19 +5,11 @@ import PestPage from './PestPage';
 import PestPageTermite from './src/PestPageTermite';
 import PestPageAphid from './src/PestPageAphid';
 import PestPageWhiteFlies from './src/PestPageWhiteFlies';
-import { pestO } from './PesticideApp';
+
 
 const Stack = createStackNavigator();
 
 const App = () => {
-  const pestComponent = {
-    'Termite': PestPageTermite,
-    'Aphid': PestPageAphid,
-    'White flies': PestPageWhiteFlies,
-  };
-
-  const pestC = pestComponent[pestO];
-
   return(
     <NavigationContainer>
       <Stack.Navigator>
@@ -27,8 +19,20 @@ const App = () => {
         />
         <Stack.Screen
           name = "Pest"
-          component = {pestC}
+          component = {PestPage}
         />
+        <Stack.Screen
+          name = "Termite"
+          component = {PestPageTermite}
+        />
+        <Stack.Screen
+          name = "Aphid"
+          component = {PestPageAphid}
+        />
+        <Stack.Screen
+          name = "White flies"
+          component = {PestPageWhiteFlies}
+          />
       </Stack.Navigator>
     </NavigationContainer>
   )
