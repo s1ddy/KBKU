@@ -15,7 +15,7 @@ const data = [
 ];
 
 
-const PesticideApp = () => {
+const PesticideApp = ({navigation}) => {
   const [plant, setPlant] = useState('');
   const [state, setState] = useState('');
   const [pesticide, setPesticide] = useState('');
@@ -73,7 +73,7 @@ const PesticideApp = () => {
             Pesticide for {plant} in {state}: {pesticide}.
           </Text>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Learn More</Text>
+            <Text style={styles.buttonText} onPress = {() => navigation.navigate('Pest')}>Learn More</Text>
           </TouchableOpacity>
         </View>
       )}
