@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
 import Sidebar from './NavBar';
 
 
-const PestPage = () => {
+const PestPageAphid = () => {
   return (
     <View style={styles.container}>
     <ScrollView>
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default PestPage;
+export default PestPageAphid;
