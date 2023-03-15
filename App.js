@@ -11,7 +11,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name = "Home"
+          name = "Keedon Bhagao Khet Ugao"
           component = {PesticideApp}
         />
         <Stack.Screen
