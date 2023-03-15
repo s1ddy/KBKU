@@ -10,7 +10,7 @@ const PestPageWhiteFlies = () => {
     <Sidebar></Sidebar>
       <Image
         style={styles.bannerImage}
-        source={require('./assets/Termite.jpg')}
+        source={require('./WhiteFlies.jpeg')}
       />
       <Text style={styles.heading}>White Flies, Tamil Nadu </Text>
       <Text style={styles.text}>
