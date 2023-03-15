@@ -1,13 +1,13 @@
 {
     "main": [
       {
-        "pest": "Termite",
+        "pest": "Aphid",
         "pesticide": "Chlorpyrifos",
         "plant": "Cotton",
         "states": ["Gujarat", "Maharashtra", "Punjab", "Kerala"]
       },
       {
-        "pest": "Termites",
+        "pest": "Termite",
         "pesticide": "Imidacloprid",
         "plant": "Sugarcane",
         "states": ["Gujarat", "Maharashtra", "Punjab", "Karnataka"]

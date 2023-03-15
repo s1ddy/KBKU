@@ -14,6 +14,8 @@ const data = [
   { label: 'Haryana', value: 'Haryana' },
 ];
 
+export const [pestO, setPestO] = useState('');
+
 
 const PesticideApp = ({navigation}) => {
   const [plant, setPlant] = useState('');
@@ -33,6 +35,7 @@ const PesticideApp = ({navigation}) => {
     });
     setPesticide(foundPesticide);
     setPest(foundPest);
+    setPestO(foundPest)
   }
 
   return (
