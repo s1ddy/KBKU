@@ -1,19 +1,19 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { createAppContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import PesticideApp from './src/screens/PesticideApp';
-import PestPage from './src/screens/PestPage';
+import PesticideApp from './PesticideApp';
+import PestPage from './PestPage';
 
-const Stack = createStackNavigator();
+const navigator = createStackNavigator(
+  {
+    Home: PesticideApp,
+    Pest: PestPage
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      title: 'Keedon Bhagao Khet Ugao'
+    },
+  }
+)
 
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={PesticideApp} />
-        <Stack.Screen name="Info" component={PestPage} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
-export default App;
+export default createAppContainer(navigator);
