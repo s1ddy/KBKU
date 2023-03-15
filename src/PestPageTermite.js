@@ -8,7 +8,7 @@ const PestPageTermite = () => {
         style={styles.bannerImage}
         source={require('./assets/Termite.jpeg')}
       />
-      <Text style={styles.heading}>Aphids, Karnataka</Text>
+      <Text style={styles.heading}>Termites, Karnataka</Text>
       <Text style={styles.text}>
         This is a sample UI with a banner image, heading, and text.
       </Text>
