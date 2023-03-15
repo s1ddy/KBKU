@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
+import Navbar from './NavBar';
 
 const PestPageTermite = () => {
   return (
     <View style={styles.container}>
+      <Navbar />
       <Image
         style={styles.bannerImage}
-        source={require('./assets/Termite.jpeg')}
+        source={require('./Termite.jpeg')}
       />
       <Text style={styles.heading}>Termites, Karnataka</Text>
       <Text style={styles.text}>
