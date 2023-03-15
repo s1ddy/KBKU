@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
 import Navbar from './NavBar';
 
 const PestPageTermite = () => {
   return (
     <View style={styles.container}>
+      <ScrollView>
       <Navbar />
       <Image
         style={styles.bannerImage}
@@ -21,6 +22,7 @@ const PestPageTermite = () => {
         <Text style={styles.listItem}>• Orange Oil</Text>
         <Text style={styles.listItemText}>Orange oil is a natural pesticide derived from orange peels that is effective in treating termites. It contains a compound called d-limonene, which is toxic to termites and can kill them on contact. Orange oil can be applied directly to infested wood or soil, where it penetrates deep into the termite galleries and kills them. It is considered an eco-friendly and non-toxic alternative to conventional chemical pesticides. However, it may not be as effective as other treatments and may require repeated applications to fully eliminate the termite infestation.</Text>
       </View>
+      </ScrollView>
     </View>
   );
 };

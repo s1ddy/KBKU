@@ -4,10 +4,6 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 const PestPage = () => {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.bannerImage}
-        source={require('./assets/pest_images/DampWoodTermite.jpg')}
-      />
       <Text style={styles.heading}>Pest Name and Region</Text>
       <Text style={styles.text}>
         This is a sample UI with a banner image, heading, and text.
