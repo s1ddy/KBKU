@@ -6,7 +6,7 @@ const PestPageTermite = () => {
     <View style={styles.container}>
       <Image
         style={styles.bannerImage}
-        source={require('./assets/Termite.jpg')}
+        source={require('./assets/Termite.jpeg')}
       />
       <Text style={styles.heading}>Aphids, Karnataka</Text>
       <Text style={styles.text}>
