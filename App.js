@@ -5,6 +5,7 @@ import PestPage from './PestPage';
 import PestPageTermite from './src/PestPageTermite';
 import PestPageAphid from './src/PestPageAphid';
 import PestPageWhiteFlies from './src/PestPageWhiteFlies';
+import PPWFTamil from './src/PestPageWhiteFlies(Tamil)';
 
 
 const Stack = createStackNavigator();
@@ -33,6 +34,10 @@ const App = () => {
           name = "White flies"
           component = {PestPageWhiteFlies}
           />
+        <Stack.Screen
+          name = "Tamil"
+          component = {PPWFTamil}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
