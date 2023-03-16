@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Navbar from './NavBar';
 
-const PestPageTermiteKannada = () => {
+const PestPageTermiteKannada = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -22,6 +22,9 @@ const PestPageTermiteKannada = () => {
         <Text style={styles.listItem}>• ಕಿತ್ತಳೆ ಎಣ್ಣೆ</Text>
         <Text style={styles.listItemText}>ಕಿತ್ತಳೆ ಎಣ್ಣೆಯು ಕಿತ್ತಳೆ ಸಿಪ್ಪೆಗಳಿಂದ ಪಡೆದ ನೈಸರ್ಗಿಕ ಕೀಟನಾಶಕವಾಗಿದ್ದು, ಗೆದ್ದಲುಗಳ ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಪರಿಣಾಮಕಾರಿಯಾಗಿದೆ. ಇದು ಡಿ-ಲಿಮೋನೆನ್ ಎಂಬ ಸಂಯುಕ್ತವನ್ನು ಹೊಂದಿರುತ್ತದೆ, ಇದು ಗೆದ್ದಲುಗಳಿಗೆ ವಿಷಕಾರಿಯಾಗಿದೆ ಮತ್ತು ಸಂಪರ್ಕದಲ್ಲಿ ಅವುಗಳನ್ನು ಕೊಲ್ಲುತ್ತದೆ. ಕಿತ್ತಳೆ ಎಣ್ಣೆಯನ್ನು ನೇರವಾಗಿ ಸೋಂಕಿತ ಮರ ಅಥವಾ ಮಣ್ಣಿಗೆ ಅನ್ವಯಿಸಬಹುದು, ಅಲ್ಲಿ ಅದು ಗೆದ್ದಲು ಗ್ಯಾಲರಿಗಳಲ್ಲಿ ಆಳವಾಗಿ ತೂರಿಕೊಂಡು ಅವುಗಳನ್ನು ಕೊಲ್ಲುತ್ತದೆ. ಸಾಂಪ್ರದಾಯಿಕ ರಾಸಾಯನಿಕ ಕೀಟನಾಶಕಗಳಿಗೆ ಇದು ಪರಿಸರ ಸ್ನೇಹಿ ಮತ್ತು ವಿಷಕಾರಿಯಲ್ಲದ ಪರ್ಯಾಯವೆಂದು ಪರಿಗಣಿಸಲಾಗಿದೆ. ಆದಾಗ್ಯೂ, ಇದು ಇತರ ಚಿಕಿತ್ಸೆಗಳಂತೆ ಪರಿಣಾಮಕಾರಿಯಾಗಿಲ್ಲದಿರಬಹುದು ಮತ್ತು ಗೆದ್ದಲು ಮುತ್ತಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ತೊಡೆದುಹಾಕಲು ಪುನರಾವರ್ತಿತ ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಬೇಕಾಗಬಹುದು.</Text>
       </View>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Termite")}>
+        <Text style={styles.buttonText}>Read this in English</Text>
+      </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -37,6 +40,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 400,
     resizeMode: 'cover',
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   heading: {
     fontSize: 24,

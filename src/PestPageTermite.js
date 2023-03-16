@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Navbar from './NavBar';
 
-const PestPageTermite = () => {
+const PestPageTermite = ({navigation}) => {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -22,6 +22,9 @@ const PestPageTermite = () => {
         <Text style={styles.listItem}>• Orange Oil</Text>
         <Text style={styles.listItemText}>Orange oil is a natural pesticide derived from orange peels that is effective in treating termites. It contains a compound called d-limonene, which is toxic to termites and can kill them on contact. Orange oil can be applied directly to infested wood or soil, where it penetrates deep into the termite galleries and kills them. It is considered an eco-friendly and non-toxic alternative to conventional chemical pesticides. However, it may not be as effective as other treatments and may require repeated applications to fully eliminate the termite infestation.</Text>
       </View>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("ಗೆದ್ದಲು")}>
+        <Text style={styles.buttonText}>ಇದನ್ನು ಕನ್ನಡದಲ್ಲಿ ಓದಿ</Text>
+      </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -37,6 +40,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 400,
     resizeMode: 'cover',
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   heading: {
     fontSize: 24,

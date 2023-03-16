@@ -6,6 +6,8 @@ import PestPageTermite from './src/PestPageTermite';
 import PestPageAphid from './src/PestPageAphid';
 import PestPageWhiteFlies from './src/PestPageWhiteFlies';
 import PPWFTamil from './src/PestPageWhiteFlies(Tamil)';
+import PestPageAphidGujurati from './src/PestPageAphid(Gujurati)';
+import PestPageTermiteKannada from './src/PestPageTermite(Kannada)';
 
 
 const Stack = createStackNavigator();
@@ -35,8 +37,16 @@ const App = () => {
           component = {PestPageWhiteFlies}
           />
         <Stack.Screen
-          name = "Tamil"
+          name = "வெள்ளை ஈக்கள்"
           component = {PPWFTamil}
+        />
+        <Stack.Screen
+          name = "ಗೆದ್ದಲು"
+          component = {PestPageTermiteKannada}
+        />
+        <Stack.Screen
+          name = "એફિડ"
+          component = {PestPageAphidGujurati}
         />
       </Stack.Navigator>
     </NavigationContainer>

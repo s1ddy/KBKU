@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Sidebar from './NavBar';
 
 
-const PestPageAphidGujurati = () => {
+const PestPageAphidGujurati = ({navigation}) => {
   return (
     <View style={styles.container}>
     <ScrollView>
@@ -27,6 +27,9 @@ const PestPageAphidGujurati = () => {
         નારંગી તેલ એ કુદરતી જંતુનાશક છે જે એફિડ્સ, નાના રસ ચૂસતા જંતુઓ જે છોડને નુકસાન પહોંચાડી શકે છે તેના નિયંત્રણમાં અસરકારક છે. નારંગીની છાલમાંથી તેલ કાઢવામાં આવે છે અને તેમાં ડી-લિમોનીન નામનું સંયોજન હોય છે, જે જંતુનાશક ગુણધર્મો ધરાવે છે. જ્યારે છોડ પર છંટકાવ કરવામાં આવે છે, ત્યારે તેલ એફિડ્સને તેમની શ્વસનતંત્રને બંધ કરીને ગૂંગળાવે છે, જેના કારણે તેઓ મૃત્યુ પામે છે. નારંગી તેલ મનુષ્યો અને પાલતુ પ્રાણીઓ માટે સલામત છે, અને તે લેડીબગ્સ અથવા મધમાખી જેવા ફાયદાકારક જંતુઓને નુકસાન કરતું નથી. નારંગી તેલનો નિયમિત ઉપયોગ એફિડની વસ્તીને નિયંત્રિત કરવામાં અને તંદુરસ્ત છોડના વિકાસને પ્રોત્સાહન આપવામાં મદદ કરી શકે છે.
         </Text>
       </View>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Aphid")}>
+        <Text style={styles.buttonText}>Read this in English</Text>
+      </TouchableOpacity>
       </ScrollView>
     </View>
   );
@@ -42,6 +45,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 400,
     resizeMode: 'cover',
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   heading: {
     fontSize: 24,
