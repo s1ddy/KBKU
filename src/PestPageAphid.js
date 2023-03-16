@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Sidebar from './NavBar';
-
+import ReadButton from './ReadButton';
 
 const PestPageAphid = ({navigation}) => {
   return (
@@ -12,6 +12,7 @@ const PestPageAphid = ({navigation}) => {
         style={styles.bannerImage}
         source={require('./aphid.jpg')}
       />
+      <ReadButton />
       <Text style={styles.heading}>Aphids, Gujurat </Text>
       <Text style={styles.text}>
       Aphids are a common pest that can have a significant impact on cotton crops in Gujarat, India. These small, sap-sucking insects feed on the leaves and stems of the cotton plants, causing damage and stunting growth. This can result in reduced yields and lower quality cotton. In addition, aphids can also transmit viruses that can further damage the plants. Farmers in Gujarat may use various methods to control aphids, including cultural practices, natural predators, and organic pesticides, in order to protect their cotton crops and ensure a successful harvest.
@@ -46,17 +47,7 @@ const styles = StyleSheet.create({
     height: 400,
     resizeMode: 'cover',
   },
-  button: {
-    backgroundColor: '#2196F3',
-    padding: 10,
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
+  
   heading: {
     fontSize: 24,
     fontWeight: 'bold',

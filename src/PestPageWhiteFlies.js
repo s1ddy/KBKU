@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Sidebar from './NavBar';
+import ReadButton from './ReadButton';
 
 
 const PestPageWhiteFlies = ({navigation}) => {
@@ -12,6 +13,7 @@ const PestPageWhiteFlies = ({navigation}) => {
         style={styles.bannerImage}
         source={require('./WhiteFlies.jpeg')}
       />
+      <ReadButton />
       <Text style={styles.heading}>White Flies, Tamil Nadu </Text>
       <Text style={styles.text}>
       Whiteflies are tiny, sap-sucking insects that belong to the same group of insects as aphids and scales. They can be very destructive pests, particularly in the tropics and subtropics. When present in large numbers, whitefly feeding can affect plant growth causing distortion, discoloration, yellowing or silvering of leaves. Whiteflies not only cause damage by feeding but also may transmit plant viruses. They injure plants directly through their feeding by removing plant sap and excrete sticky honeydew which causes yellowing or death of leaves. The most common species are the greenhouse whitefly and the tobacco whitefly

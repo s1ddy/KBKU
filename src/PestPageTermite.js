@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Navbar from './NavBar';
+import ReadButton from './ReadButton';
 
 const PestPageTermite = ({navigation}) => {
   return (
@@ -11,6 +12,7 @@ const PestPageTermite = ({navigation}) => {
         style={styles.bannerImage}
         source={require('./Termite.jpeg')}
       />
+      <ReadButton />
       <Text style={styles.heading}>Termites, Karnataka</Text>
       <Text style={styles.text}>
         Termites pose a significant threat to potato crops in Karnataka, a state in southern India. These pests feed on the roots of potato plants, causing damage that can reduce crop yield and quality. The damage is particularly severe during the early growth stages of the plant, leading to stunted growth, wilting, and death of the plant. This can have serious economic consequences for farmers who rely on potato crops. To combat the damage caused by termites, farmers can use a range of strategies, including chemical treatments, crop rotation, and planting termite-resistant potato varieties. These efforts can help mitigate the impact of termite infestations and protect potato crops in Karnataka
