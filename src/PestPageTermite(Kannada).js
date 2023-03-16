@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
 import Navbar from './NavBar';
 
-const PestPageTermite = () => {
+const PestPageTermiteKannada = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default PestPageTermite;
+export default PestPageTermiteKannada;
