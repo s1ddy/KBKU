@@ -35,6 +35,13 @@ const PesticideApp = ({navigation}) => {
     setPest(foundPest);
   }
 
+  function buttonPress(){
+    navigation.navigate(pest);
+    setPesticide('');
+    setPlant('');
+    setState('');
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Search for Pesticides</Text>
@@ -73,7 +80,7 @@ const PesticideApp = ({navigation}) => {
             Pesticide for {plant} in {state}: {pesticide}.
           </Text>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText} onPress = {() => navigation.navigate(pest)}>Learn More</Text>
+            <Text style={styles.buttonText} onPress = {() => buttonPress()}>Learn More</Text>
           </TouchableOpacity>
         </View>
       )}
