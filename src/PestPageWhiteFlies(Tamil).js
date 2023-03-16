@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
+import PestPage from '../PestPage';
 import Sidebar from './NavBar';
 
 
-const PPWFTamil = ({navigation}) => {
+const PestPageWhiteFliesTamil = ({navigation}) => {
   return (
     <View style={styles.container}>
     <ScrollView>
@@ -85,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PPWFTamil;
+export default PestPageWhiteFliesTamil;

@@ -5,7 +5,7 @@ import PestPage from './PestPage';
 import PestPageTermite from './src/PestPageTermite';
 import PestPageAphid from './src/PestPageAphid';
 import PestPageWhiteFlies from './src/PestPageWhiteFlies';
-import PPWFTamil from './src/PestPageWhiteFlies(Tamil)';
+import PestPageWhiteFliesTamil from './src/PestPageWhiteFlies(Tamil)';
 import PestPageAphidGujurati from './src/PestPageAphid(Gujurati)';
 import PestPageTermiteKannada from './src/PestPageTermite(Kannada)';
 
@@ -38,7 +38,7 @@ const App = () => {
           />
         <Stack.Screen
           name = "வெள்ளை ஈக்கள்"
-          component = {PPWFTamil}
+          component = {PestPageWhiteFliesTamil}
         />
         <Stack.Screen
           name = "ಗೆದ್ದಲು"
