@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Sidebar from './NavBar';
 
 
-const PestPageWhiteFlies = () => {
+const PestPageWhiteFlies = ({navigation}) => {
   return (
     <View style={styles.container}>
     <ScrollView>
@@ -26,6 +26,9 @@ const PestPageWhiteFlies = () => {
         <Text style={styles.listItemText}>
      Neem oil is a natural pesticide and insect repellent that is derived from the seeds of the neem tree. It is commonly used in organic farming to control pests and diseases, including termites. Neem oil contains azadirachtin, which disrupts the growth and development of insects, making it an effective alternative to conventional chemical pesticides. Neem oil is non-toxic to humans and animals, but it should still be used with caution and in accordance with its instructions. Neem oil is also used in traditional medicine for its antibacterial and antifungal properties
         </Text>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Tamil")}>
+        <Text style={styles.buttonText}>இதை தமிழில் படியுங்கள்</Text>
+        </TouchableOpacity>
       </View>
       </ScrollView>
     </View>
@@ -42,6 +45,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 400,
     resizeMode: 'cover',
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   heading: {
     fontSize: 24,

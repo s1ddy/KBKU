@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Image, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Sidebar from './NavBar';
 
 
-const PPWFTamil = () => {
+const PPWFTamil = ({navigation}) => {
   return (
     <View style={styles.container}>
     <ScrollView>
@@ -26,6 +26,9 @@ const PPWFTamil = () => {
         <Text style={styles.listItemText}>
         வேப்ப எண்ணெய் ஒரு இயற்கை பூச்சிக்கொல்லி மற்றும் பூச்சி விரட்டியாகும், இது வேப்ப மரத்தின் விதைகளிலிருந்து பெறப்படுகிறது. இது பொதுவாக கரிம வேளாண்மையில் கரையான் உள்ளிட்ட பூச்சிகள் மற்றும் நோய்களைக் கட்டுப்படுத்தப் பயன்படுகிறது. வேப்ப எண்ணெயில் அசாடிராக்டின் உள்ளது, இது பூச்சிகளின் வளர்ச்சி மற்றும் வளர்ச்சியை சீர்குலைக்கிறது, இது வழக்கமான இரசாயன பூச்சிக்கொல்லிகளுக்கு ஒரு சிறந்த மாற்றாக அமைகிறது. வேப்ப எண்ணெய் மனிதர்களுக்கும் விலங்குகளுக்கும் நச்சுத்தன்மையற்றது, ஆனால் அது இன்னும் எச்சரிக்கையுடன் மற்றும் அதன் அறிவுறுத்தல்களின்படி பயன்படுத்தப்பட வேண்டும். வேப்ப எண்ணெய் அதன் பாக்டீரியா எதிர்ப்பு மற்றும் பூஞ்சை காளான் பண்புகளுக்காக பாரம்பரிய மருத்துவத்திலும் பயன்படுத்தப்படுகிறது
         </Text>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("White flies")}>
+        <Text style={styles.buttonText}>Read this in English</Text>
+        </TouchableOpacity>
       </View>
       </ScrollView>
     </View>
@@ -42,6 +45,17 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 400,
     resizeMode: 'cover',
+  },
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   heading: {
     fontSize: 24,
@@ -69,7 +83,6 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     marginVertical: 5,
   },
-
 });
 
 export default PPWFTamil;
