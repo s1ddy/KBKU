@@ -47,7 +47,17 @@ const styles = StyleSheet.create({
     height: 400,
     resizeMode: 'cover',
   },
-  
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
   heading: {
     fontSize: 24,
     fontWeight: 'bold',
