@@ -47,7 +47,7 @@ const PesticideApp = ({navigation}) => {
       <Text style={styles.title}>Search for Pesticides</Text>
       <TextInput
         style={styles.input}
-        placeholder="Enter plant name"
+        placeholder="Enter crop name"
         value={plant}
         onChangeText={text => setPlant(text)}
       />
@@ -77,7 +77,7 @@ const PesticideApp = ({navigation}) => {
           <Text style={styles.resultText}>
             Pest for {plant} in {state}: {pest}.
             {'\n'}
-            Pesticide for {plant} in {state}: {pesticide}.
+            Inorganic Pesticide for {plant} in {state}: {pesticide}.
           </Text>
           <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText} onPress = {() => buttonPress()}>Learn More</Text>
